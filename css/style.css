@@ -1010,3 +1010,85 @@ icon-group5
     color: var(--brand-color-primary);
     transform: scale(1.1);
 } */
+
+/* Homework 6 */
+
+/* pole e-mail */
+
+input {
+    padding: 15px 0px 15px 16px;
+    background-color: var(--brand-color-background);
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    height: 50px;
+    position: relative;
+}
+
+.color-text-email {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    line-height: 1.25;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.email-button {
+    display: flex;
+    align-items: center;
+    
+}
+
+.tamto {
+    padding: 12px 12px 0px 0px;
+}
+
+/* styl-zapisz się */
+
+.sign-up {
+    color: var(--brand-color-white);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+.footer-sign-up {
+    margin-left: 78px;
+    margin-top: 10px;
+}
+
+.icon-sign-up {
+    display: flex;
+    fill: var(--brand-color-white);
+    position: absolute;
+}
+/* przycisk zapisz się */
+.button-sign {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--brand-color-white);
+    background-color: var(--brand-color-primary);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
+}
+
