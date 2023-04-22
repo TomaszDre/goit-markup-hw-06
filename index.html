@@ -474,8 +474,8 @@
                         <h3 class="sign-up">Zapisz się do newslettera</h3>
                         <ul class="email-button">
                         <li>
-                        <label class="label-padding"> 
-                        <input class="color-text-email" type="text" name="username" placeholder="E-mail" />
+                        <label class="label-padding label-email"> 
+                        <input class="color-text-email input-email" type="text" name="username" placeholder="E-mail" />
                         </label>
                         </li>
 
@@ -510,25 +510,51 @@
 
 <form>
     <h3 class="title-modal">Zostaw swoje dane w formularzu poniżej</h3>
-    <label class="label">
-      Imię
-      <input class="input" type="name" name="email" placeholder="example@mail.com">
-    </label>
-    <label class="label">
-        Telefon
-        <input class="input" type="phone" name="email" placeholder="example@mail.com">
+<div>
+    <ul>
+        <li>
+            <span class="span-modal">Imie</span>
+    <label class="label-modal ">
+        <input class="input-modal" type="text" name="text" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space." />
       </label>
-      <label class="label">
-        Email
-        <input class="input" type="email" name="email" placeholder="example@mail.com">
+        </li>
+
+        <li>
+            <span class="span-modal">Telefon</span>
+    <label class="label-modal">
+        <input class="input-modal" type="text" name="text">
       </label>
+        </li>
 
-    <label class="label">
-      Komentarz
-      <textarea class="textarea" name="komentarz" rows="5" placeholder="Type your message here..."></textarea>
+        <li>
+            <span class="span-modal">Email</span>
+      <label class="label-modal">
+        <input class="input-modal" type="email" name="email">
+      </label>
+        </li>
+    
+      <li>
+    <span class="span-modal">Komentarz</span>
+    <label class="label-modal">
+      <textarea class="textarea" name="text" rows="5" placeholder="Wprowadź tekst"></textarea>
     </label>
+    </li>
+</ul>
+</div>
+<div class="checkbox-modal">
+<form>
+    <label class="span-modal-text">
+      <input type="checkbox" name="hobby" value="music"/>
+      <span>Oświadczam iż akceptuję</span><span class="link-modal"> 
+        <a href="#" class="link-modal">Regulamin</a> </span> <span>i</span> 
+        <a href="#" class="link-modal">Politykę Prywatności.</a>
+    </label>
+  </form>
+</div>
 
+<div>
     <button class="button-modal" type="button">Wyślij</button>
+</div>
   </form>
   
                 

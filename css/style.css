@@ -1015,18 +1015,17 @@ icon-group5
 
 /* pole e-mail */
 
-input {
+.input-email {
     padding: 15px 0px 15px 16px;
     background-color: var(--brand-color-background);
 }
 
-label {
+.label-email {
     display: flex;
     flex-direction: column;
     width: 358px;
     height: 50px;
     position: relative;
-    
 }
 
 .color-text-email {
@@ -1037,7 +1036,7 @@ label {
     letter-spacing: 0.03em;
     font-weight: 400;
     line-height: 1.25;
-     border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 }
@@ -1045,7 +1044,6 @@ label {
 .email-button {
     display: flex;
     align-items: center;
-    
 }
 
 /* .label-padding {
@@ -1062,13 +1060,10 @@ label {
     letter-spacing: 0.03em;
     margin-top: 10px;
     margin-bottom: 20px;
-
 }
 
 .footer-sign-up {
     margin-left: 78px;
-
-    
 }
 
 .icon-sign-up {
@@ -1096,7 +1091,6 @@ label {
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   
 }
 
 .button-properties {
@@ -1105,33 +1099,59 @@ label {
 
 /* Modal */
 
-.input, .textarea {
-    padding: 8px;
-    font-family: inherit;
-    font-size: inherit;
-  }
-  
-  .label {
+.title-modal {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-secondary);
+    padding: 40px 40px 30px 40px;
+}
+
+.span-modal {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--paragraf-text-color);
+    padding: 10px 0px 4px 40px;
+}
+
+.input-modal {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    line-height: 1.25;
+    width: 448px;
+    height: 40px;
+    margin-left: 40px;
+}
+
+.label-modal {
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
-  }
-  
-  .textarea {
+    padding-top: 4px;
+}
+
+.textarea {
     resize: none;
-  }
+    width: 448px;
+    height: 120px;
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    padding-left: 16px;
+    padding-top: 12px;
+}
 
-  .title-modal {
-font-weight: 700;
-font-size: 20px;
-line-height: 1.15;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--brand-color-secondary);
-padding: 40px 40px 30px 40px;
-  }
-
-  .button-modal {
+.button-modal {
     display: flex;
     font-weight: 700;
     font-size: 16px;
@@ -1151,4 +1171,28 @@ padding: 40px 40px 30px 40px;
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
+
+.label-modal {
+    box-sizing: border-box;
+    border: 1px solid rgba((33, 33, 33, 0.2) 50%);
+    border-radius: 4px;
+}
+
+.checkbox-modal {
+    padding-top: 20px;
+}
+
+.span-modal-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--paragraf-text-color);
+    margin-left: 57px;
+}
+
+.link-modal {
+    color: var(--brand-color-primary);
+    text-decoration: underline;
+}
