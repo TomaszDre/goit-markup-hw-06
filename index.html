@@ -467,19 +467,20 @@
 
                     </ul>
                 </div>
-                <div class="footer-sign-up">
+                
                     
                     <form>
+                        <div class="footer-sign-up">
                         <h3 class="sign-up">Zapisz się do newslettera</h3>
                         <ul class="email-button">
                         <li>
-                        <label class="tamto"> 
+                        <label class="label-padding"> 
                         <input class="color-text-email" type="text" name="username" placeholder="E-mail" />
                         </label>
                         </li>
 
-                        <li>
-                            <svg width="24" height="24" class="icon-sign-up" viewBox="0 0 32 32">
+                        <li class="button-properties">
+                            <svg width="24" height="24" class="icon-sign-up">
                                 <use href="/goit-markup-hw-06/images/icons.svg#icon-send-6"></use>
                             </svg>
                         <button 
@@ -487,10 +488,11 @@
             
                         </li> 
                         </ul>
+                    </div>
                     </form>
 
                     
-                </div>
+                
             </div>
             
         </div>
@@ -498,11 +500,40 @@
 
         </footer>
         <div class="backdrop is-hidden" data-modal>
+            
             <div class="modal">
+                
                 <button type="button" class="close" data-modal-close> 
                     &#10006;
                 </button>
+                
+
+<form>
+    <h3 class="title-modal">Zostaw swoje dane w formularzu poniżej</h3>
+    <label class="label">
+      Imię
+      <input class="input" type="name" name="email" placeholder="example@mail.com">
+    </label>
+    <label class="label">
+        Telefon
+        <input class="input" type="phone" name="email" placeholder="example@mail.com">
+      </label>
+      <label class="label">
+        Email
+        <input class="input" type="email" name="email" placeholder="example@mail.com">
+      </label>
+
+    <label class="label">
+      Komentarz
+      <textarea class="textarea" name="komentarz" rows="5" placeholder="Type your message here..."></textarea>
+    </label>
+
+    <button class="button-modal" type="button">Wyślij</button>
+  </form>
+  
+                
             </div>
+            
         </div>
         <script src="./js/modal.js"></script>
     </body>

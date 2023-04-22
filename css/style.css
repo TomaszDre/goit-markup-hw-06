@@ -97,7 +97,7 @@ button:focus {
     cursor: pointer;
     color: var(--brand-color-white);
     background-color: var(--brand-color-primary);
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 
 p {
@@ -1026,6 +1026,7 @@ label {
     width: 358px;
     height: 50px;
     position: relative;
+    
 }
 
 .color-text-email {
@@ -1047,9 +1048,9 @@ label {
     
 }
 
-.tamto {
-    padding: 12px 12px 0px 0px;
-}
+/* .label-padding {
+    padding: 10px 12px 0px 0px;
+} */
 
 /* styl-zapisz się */
 
@@ -1059,17 +1060,22 @@ label {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
 }
 
 .footer-sign-up {
     margin-left: 78px;
-    margin-top: 10px;
+
+    
 }
 
 .icon-sign-up {
     display: flex;
     fill: var(--brand-color-white);
     position: absolute;
+    margin: 13px 8px 13px 148px;
 }
 /* przycisk zapisz się */
 .button-sign {
@@ -1086,9 +1092,63 @@ label {
     border: none;
     width: 200px;
     height: 50px;
+    padding-right: 42px;
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 
+.button-properties {
+    margin-left: 12px;
+}
+
+/* Modal */
+
+.input, .textarea {
+    padding: 8px;
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+  .label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+  
+  .textarea {
+    resize: none;
+  }
+
+  .title-modal {
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--brand-color-secondary);
+padding: 40px 40px 30px 40px;
+  }
+
+  .button-modal {
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--brand-color-white);
+    background-color: var(--brand-color-primary);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin: 30px 164px 40px 164px;
+    padding: 10px 76px 10px 76px;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
