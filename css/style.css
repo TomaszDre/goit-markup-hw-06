@@ -802,6 +802,9 @@ icon-group5
     left: 50%;
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     /* transition: transform 0.6s ease-in; */
 }
 
@@ -1082,7 +1085,7 @@ icon-group5
     letter-spacing: 0.06em;
     color: var(--brand-color-white);
     background-color: var(--brand-color-primary);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(243, 109, 109, 0.15);
     border-radius: 4px;
     border: none;
     width: 200px;
@@ -1106,7 +1109,7 @@ icon-group5
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--brand-color-secondary);
-    padding: 40px 40px 30px 40px;
+    padding: 40px 40px 12px 40px;
 }
 
 .span-modal {
@@ -1116,6 +1119,7 @@ icon-group5
     letter-spacing: 0.01em;
     color: var(--paragraf-text-color);
     padding: 10px 0px 4px 40px;
+    
 }
 
 .input-modal {
@@ -1129,12 +1133,14 @@ icon-group5
     width: 448px;
     height: 40px;
     margin-left: 40px;
+    
 }
 
 .label-modal {
     display: flex;
     flex-direction: column;
     padding-top: 4px;
+    padding-bottom: 10px;
 }
 
 .textarea {
@@ -1177,10 +1183,11 @@ icon-group5
     box-sizing: border-box;
     border: 1px solid rgba((33, 33, 33, 0.2) 50%);
     border-radius: 4px;
+    
 }
 
 .checkbox-modal {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .span-modal-text {
@@ -1190,6 +1197,7 @@ icon-group5
     letter-spacing: 0.03em;
     color: var(--paragraf-text-color);
     margin-left: 57px;
+    
 }
 
 .link-modal {
