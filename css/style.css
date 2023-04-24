@@ -1121,7 +1121,7 @@ icon-group5
 }
 
 .input-modal {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--brand-color-secondary);
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -1131,6 +1131,7 @@ icon-group5
     width: 448px;
     height: 40px;
     margin-left: 40px;
+    position: relative;
 }
 
 .label-modal {
@@ -1138,6 +1139,9 @@ icon-group5
     flex-direction: column;
     padding-top: 4px;
     padding-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 }
 
 .textarea {
@@ -1176,10 +1180,9 @@ icon-group5
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.label-modal {
-    box-sizing: border-box;
-    border: 1px solid rgba((33, 33, 33, 0.2) 50%);
-    border-radius: 4px;
+.input-modal:focus-within,
+.input-modal:focus-within + svg {
+    fill: var(--brand-color-primary);
 }
 
 .checkbox-modal {
@@ -1198,4 +1201,16 @@ icon-group5
 .link-modal {
     color: var(--brand-color-primary);
     text-decoration: underline;
+}
+
+.checkbox-color {
+    background-color: var(--brand-color-primary);
+   
+}
+
+.icon-modal {
+ display: flex;
+ position: absolute;
+ margin: 11px 0px 0px 12px;
+ padding-left: 12px;
 }
