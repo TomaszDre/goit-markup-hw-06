@@ -511,12 +511,10 @@
 <form>
     <h3 class="title-modal">Zostaw swoje dane w formularzu poniżej</h3>
 <div>
-    <ul>
-        <li>
+    <ul >
+        <li  class="pad-mod">
             <span class="span-modal">Imie</span>
-            
     <label class="label-modal">
-      
         <input class="input-modal" type="text" name="text" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" 
         title="Username must be two words separated by space." />
         <svg width="18" height="18" class="icon-modal">
@@ -526,17 +524,18 @@
       
         </li>
 
-        <li>
+        <li  class="pad-mod">
             <span class="span-modal">Telefon</span>
     <label class="label-modal">
+        <input class="input-modal" type="text" name="text">
         <svg width="18" height="18" class="icon-modal">
             <use href="/goit-markup-hw-06/images/icons.svg#icon-phone-6"></use>
         </svg>
-        <input class="input-modal" type="text" name="text">
+        
       </label>
         </li>
 
-        <li>
+        <li  class="pad-mod">
             <span class="span-modal">Email</span>
       <label class="label-modal">
         <input class="input-modal" type="email" name="email">
@@ -546,9 +545,9 @@
       </label>
         </li>
     
-      <li>
+      <li >
     <span class="span-modal">Komentarz</span>
-    <label class="label-modal">
+    <label>
       <textarea class="textarea" name="text" rows="5" placeholder="Wprowadź tekst"></textarea>
     </label>
     </li>
