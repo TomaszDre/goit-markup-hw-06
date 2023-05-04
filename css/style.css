@@ -92,12 +92,12 @@ margin: -94px; */
     padding: 0 15px;
 }
 
-button:hover,
-button:focus {
+.button:hover,
+.button:focus {
     cursor: pointer;
     color: var(--brand-color-white);
     background-color: var(--brand-color-primary);
-    /* transform: scale(1.1); */
+    transform: scale(1.05);
 }
 
 p {
@@ -1095,6 +1095,13 @@ icon-group5
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button-sign:hover,
+.button-sign:focus {
+    cursor: pointer;
+    color: var(--brand-color-white);
+    background-color: var(--brand-color-primary);
+}
+
 .button-properties {
     margin-left: 12px;
 }
@@ -1206,6 +1213,14 @@ icon-group5
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button-modal:hover,
+.button-modal:focus {
+    cursor: pointer;
+    color: var(--brand-color-white);
+    background-color: var(--brand-color-primary);
+    transform: scale(1.05);
+}
+
 .input-modal:focus-within,
 .input-modal:focus-within + svg {
     fill: var(--brand-color-primary);
@@ -1247,6 +1262,7 @@ icon-group5
     position: relative;
     padding-left: 25px;
     margin-bottom: 12px;
+    margin-top: 12px;
     cursor: pointer;
     font-size: 14px;
     -webkit-user-select: none;
@@ -1271,17 +1287,21 @@ icon-group5
     left: 0;
     height: 15px;
     width: 16px;
-    background-color: #eee;
+    background-color: var(--brand-color-white);
+    border: 2px solid;
+    border-color: var(--brand-color-secondary);
+    border-radius: 2px;
 }
 
 /* On mouse-over, add a grey background color */
 .container-check:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: var(--brand-color-white);
 }
 
 /* When the checkbox is checked, add a blue background */
 .container-check input:checked ~ .checkmark {
     background-color: #2196f3;
+    border-color: var(--brand-color-primary);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -1298,9 +1318,10 @@ icon-group5
 
 /* Style the checkmark/indicator */
 .container-check .checkmark:after {
-    left: 6px;
-    top: 0px;
-    width: 5px;
+    left: 4px;
+    top: -1px;
+    right: 1px;
+    width: 6px;
     height: 12px;
     border: solid white;
     border-width: 0 2px 2px 0;
