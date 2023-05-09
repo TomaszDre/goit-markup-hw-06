@@ -1190,7 +1190,7 @@ icon-group5
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    /* color: rgba(117, 117, 117, 0.5); */
+    color: var(--brand-color-logo-black);
     padding-left: 16px;
     margin-top: 4px;
     padding-top: 12px;
@@ -1205,6 +1205,10 @@ icon-group5
 
 .textarea:focus-within {
     border-color: #2196f3;
+}
+
+.textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
 }
 
 .button-modal {
